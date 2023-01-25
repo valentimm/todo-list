@@ -20,6 +20,12 @@ module.exports = {
         'gray-700': '#0D0D0D',
         'red-danger': '#e25858'
       },
+      spacing: {
+        '159' : '39.75rem',
+        '160': '41rem',
+        '184' : '46rem',
+        '192': '48rem',
+      },
     },
   },
   plugins: [],
