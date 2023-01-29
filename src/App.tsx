@@ -3,14 +3,18 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import { Header } from './components/Header'
 import { Form } from './components/Form'
-import { Tasks } from './components/Tasks'
+import { TasksContainer } from './components/TasksContainer'
+import { Task } from './components/Task'
 
 export function App() {
     return (
     <div>
      <Header />
      <Form />
-     <Tasks />
+     <TasksContainer />
+     <div className='flex justify-center items-center w-184 h-20 m-auto'>
+      <Task />
+     </div>
     </div>
   )
 }

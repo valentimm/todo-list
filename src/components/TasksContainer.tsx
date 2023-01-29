@@ -1,8 +1,8 @@
 import ClipboardImg from '../assets/clipboard.svg'
 
-export function Tasks (){
+export function TasksContainer (){
   return(
-    <div className="w-192 h-72 flex justify-between mx-auto border-2 border-red-500">
+    <div className="w-192 h-72 flex justify-between mx-auto ">
       <span className="w-192  flex justify-between mx-auto">
         <h1 className="font-bold text-blue-light flex gap-2">Tarefas criadas
           <div className="w-7 h-6 bg-gray-400 rounded-full" >
@@ -16,9 +16,9 @@ export function Tasks (){
         </h1>
       </span>
       
-      <span className='flex border-2 border-yellow-500'>
+      {/*<span className='flex items-center justify-center border-2 border-yellow-500'>
         <img className="w-14 h-14" src={ClipboardImg} alt="Clipboard" />
-      </span>
+  </span>*/}
 
       </div>
   )
