@@ -1,25 +1,20 @@
-import ClipboardImg from '../assets/clipboard.svg'
+import Clipboard from 'phosphor-react'
 
 export function TasksContainer (){
   return(
-    <div className="w-192 h-72 flex justify-between mx-auto ">
-      <span className="w-192  flex justify-between mx-auto">
-        <h1 className="font-bold text-blue-light flex gap-2">Tarefas criadas
-          <div className="w-7 h-6 bg-gray-400 rounded-full" >
-            <h1 className="text-white text-s font-bold flex justify-center my-auto">0</h1>
-          </div>
-        </h1>
-        <h1 className="font-bold text-purple-dark flex gap-2">Concluídas
-          <div className="w-7 h-6 bg-gray-400 rounded-full" >
-            <h1 className="text-white text-s font-bold flex justify-center my-auto">0</h1>
-          </div>
-        </h1>
-      </span>
-      
-      {/*<span className='flex items-center justify-center border-2 border-yellow-500'>
-        <img className="w-14 h-14" src={ClipboardImg} alt="Clipboard" />
-  </span>*/}
-
+  <div>  
+    <div className='flex justify-between items-start pb-8 text-xs'>
+      <div>
+          <a className='text-blue-light font-bold'>Tarefas Criadas</a> <span className="bg-gray-400  pl-1 pt-2 gap-3 rounded-full ml-2 align-middle h-4 w-6 absolute inline-flex">
+            <a className='text-gray-200 font-bold -mt-2 ml-1'>0 </a>
+            </span>
       </div>
+      <div>
+          <a className='text-purple-light font-bold mr-[4.5rem]'>Concluídas</a> <span className="bg-gray-400 -ml-[4.1rem]  pt-2 gap-3 rounded-full  align-middle h-4 w-[3rem] absolute inline-flex">
+            <a className='text-gray-200 font-bold -mt-2 ml-1'>0 de 5 </a>
+            </span>
+      </div>
+    </div>
+  </div>
   )
 }
