@@ -12,6 +12,7 @@ export function App() {
      <Form />
      <div className='w-192 h-14 mx-auto'>
       <TasksContainer />
+      <Task />
      </div>
      </div>
   )
